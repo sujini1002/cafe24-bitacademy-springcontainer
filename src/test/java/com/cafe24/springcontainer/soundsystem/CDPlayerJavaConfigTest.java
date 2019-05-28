@@ -21,11 +21,13 @@ import config.soundsystem.CDPlayerConfig;
 public class CDPlayerJavaConfigTest {
 	@Rule
 	public final SystemOutRule systemOutRule = new SystemOutRule().enableLog();
-	@Autowired
-	private CompackDisc cd;
 	
 	@Autowired
-	private CDPlayer player;
+	private CompackDisc cd; // cd가 잘 만들었는지 확인하는 용도
+
+	
+	@Autowired
+	private CDPlayer player; //실제론 얘가 잘 주입 받아야함
 	
 	@Test
 	public void testCDNull() {

@@ -10,12 +10,10 @@ public class CDPlayer {
 //	@Autowired
 	private CompackDisc cd;
 	
-	public CDPlayer() {
-		System.out.println("------");
-	}
+//	public CDPlayer() {}
 	
 //	와이어링 02(생성자)
-//	@Autowired
+	@Autowired
 	public CDPlayer(CompackDisc cd) { //생성자를 이용하여 주입
 		this.cd = cd;
 	}
@@ -30,8 +28,9 @@ public class CDPlayer {
 	}
 	
 	//와이어링03 (일반함수)
-	@Autowired
+//	@Autowired
 	public void insertCompactDisc(CompackDisc cd) {
 		this.cd = cd;
 	}
+	
 }
